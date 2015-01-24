@@ -29,3 +29,13 @@ def stats(dictio):
     templist.append(number_of_classes[key])
     statslist.append(templist)
   return statslist
+
+def courses(teachers):
+  total_courses = []
+  end_result = []
+  for key in teachers.items():
+    total_courses.append(teachers.values())
+  for courses_of_one_teacher in teachers.values():
+    for course in courses_of_one_teacher:
+      end_result.append(course)
+  return end_result
