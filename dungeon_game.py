@@ -1,9 +1,14 @@
 import random
 
-CELLS = [(0, 0), (0, 1), (0, 2),
-         (1, 0), (1, 1), (1, 2),
-         (2, 0), (2, 1), (2, 2)]
+CELLS = []
 
+maze_size = int(input('What is the size of the maze? '))
+
+for x in range(maze_size+1):
+    for y in range(maze_size+1):
+        tuple = (x, y)
+        CELLS.append(tuple)
+CELLS.sort()
 
 def get_locations():
   monster = random.choice(CELLS)
